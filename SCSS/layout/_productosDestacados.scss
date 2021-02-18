@@ -1,0 +1,55 @@
+.destacados{
+
+    margin-top: 5px;
+
+    h1{
+        color: white;
+        background-color: black;
+        padding: 10px 15px;
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: 21px;
+    }
+
+    &__tituloProductosDestacados{
+        height: 40px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: agrandarTitulo;           
+    }
+
+    @keyframes agrandarTitulo {
+        0% { font-size:small;  }
+        50% { font-size:medium;  }
+        100% { font-size:large;  }
+     }
+
+     &__fila:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+     &__columna{
+        float: left;
+        width: 25%;
+        padding: 20px;
+     }
+
+    &__imagenProducto{
+        width: 200px;
+        height: 200px;
+        transition: transform 3s;  
+    }
+    
+    &__imagenProducto:hover{        
+        transform: scale(2,2);
+    }
+
+    @for $i from 1 through 8 {
+        .descripcionProducto-#{$i} {
+            font-size: 22px - $i;
+        }
+    }
+
+
+}

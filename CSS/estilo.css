@@ -1,0 +1,113 @@
+.cabecera {
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px black; }
+  .cabecera__zonaLogo {
+    width: 354px;
+    height: 94px;
+    padding: 2px 2px; }
+    .cabecera__zonaLogo img {
+      width: 350px;
+      height: 90px; }
+  .cabecera__zonaBuscador {
+    width: 40%;
+    height: 94px;
+    text-align: center; }
+  .cabecera__formularioBuscador {
+    margin-top: 30px; }
+    .cabecera__formularioBuscador input {
+      text-align: center;
+      width: 80%;
+      font-weight: bold;
+      padding: 10px 10px;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      border-color: gray; }
+  .cabecera__zonaLogin {
+    width: 30%;
+    height: 94px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.pie {
+  background-color: black;
+  padding: 20px;
+  text-align: center; }
+  .pie p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; }
+
+.destacados {
+  margin-top: 5px; }
+  .destacados h1 {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 21px; }
+  .destacados__tituloProductosDestacados {
+    height: 40px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: agrandarTitulo; }
+
+@keyframes agrandarTitulo {
+  0% {
+    font-size: small; }
+  50% {
+    font-size: medium; }
+  100% {
+    font-size: large; } }
+  .destacados__fila:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .destacados__columna {
+    float: left;
+    width: 25%;
+    padding: 20px; }
+  .destacados__imagenProducto {
+    width: 200px;
+    height: 200px;
+    transition: transform 3s; }
+  .destacados__imagenProducto:hover {
+    transform: scale(2, 2); }
+  .destacados .descripcionProducto-1 {
+    font-size: 21px; }
+  .destacados .descripcionProducto-2 {
+    font-size: 20px; }
+  .destacados .descripcionProducto-3 {
+    font-size: 19px; }
+  .destacados .descripcionProducto-4 {
+    font-size: 18px; }
+  .destacados .descripcionProducto-5 {
+    font-size: 17px; }
+  .destacados .descripcionProducto-6 {
+    font-size: 16px; }
+  .destacados .descripcionProducto-7 {
+    font-size: 15px; }
+  .destacados .descripcionProducto-8 {
+    font-size: 14px; }
+
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0px 50px; }
+
+@media (max-width: 992px) {
+  .cabecera__zonaBuscador {
+    display: none; }
+  .destacados__columna {
+    width: 50%; } }
+
+@media screen and (max-width: 600px) {
+  .destacados__columna {
+    width: 100%; } }
