@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tienda Virtual</title>    
     <link rel="stylesheet" href="CSS/estilo.css">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +14,7 @@
         <!-- ZONA CABECERA   -->    
 
     <header class="cabecera">
-        <div class="cabecera__zonaLogo"><img src="./img/logo.png" alt=""></div>
+        <div class="cabecera__zonaLogo"><img src="./img/logo.png" alt=""></div>        
         <div class="cabecera__zonaBuscador">
             <form action="" class="cabecera__formularioBuscador">
                 <input type="search" placeholder="Buscar Producto">
@@ -92,9 +93,9 @@
         <!-- ZONA BANNER -->
         <!-- <div class="bannerHome" ></div> -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner carousel-original">
               <div class="carousel-item active">
-                <img src="./img/bannerbild.jfif" class="d-block w-100"  alt="...">                
+                <img src="./img/bannerbild.jfif"  class="d-block w-100"  alt="...">                
               </div>
               <div class="carousel-item">
                 <img src="./img/bannerbild.jfif" class="d-block w-100" alt="...">
@@ -103,6 +104,19 @@
                 <img src="./img/bannerbild.jfif" class="d-block w-100" alt="...">
               </div>
             </div>
+
+            <div class="carousel-inner carousel-movil">
+              <div class="carousel-item active">
+                <img src="./img/bannerbild_768.png"  class="d-block w-100"  alt="...">                
+              </div>
+              <div class="carousel-item">
+                <img src="./img/bannerbild_768.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/bannerbild_768.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
